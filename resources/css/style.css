@@ -11,6 +11,9 @@
     --sofia: "Sofia", cursive;
     --Anton: "Anton", sans-serif;
     --Lato: "Lato", sans-serif;
+    --bg-gradient: linear-gradient(
+        to bottom,
+        #dd2476, #ff512f);
 }
 body{
     font-family: var(--roboto);
@@ -169,8 +172,8 @@ p{
 }
 
 .content-wrapper .image-background {
-    height: 43.5rem;
-    display: flex;
+    height: 30rem;
+    /*display: flex;*/
     justify-content: center;
     background-image: url('../images/background1.jpg');
     background-position: center;
@@ -178,76 +181,39 @@ p{
     background-size: cover;
     color: white;
     margin-bottom: 5rem;
+   /* background: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 43%, rgba(0,0,0,0.65) 100%);*/
+
 
     
 }
-
-.sign-up{
-    position: relative;
-    top: 171px;
-    right:30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 5rem 2.5rem 5rem;
-    width: 40.625rem;
-    margin-top: 2rem;
-    height: 20.625rem;
-    font-family: "Roboto", sans-serif;
-    
-}
-
-.sign-up h1 {
-    
-     color: white;
-     line-height: 1.4;
-     font-family: var(--roboto);
-     text-align: center;
-     justify-content: center;
-     padding-bottom: 0.70rem;
-    
-}
-
-.sign-up h2 {
-    font-size: 2.25rem;
-    
-    text-align: center;
-    padding-top: 0.125rem;
-    font-family: "gugi", cursive;
-    color: #9dc20b;
-    
-   
-  }
-
-  .sign-up p{
-    font-weight: bold;
-    text-align: center;
-    padding-top: 0.7rem;
-    font-size: 1.25rem;
-}
-
- .order {
-    width: 8rem;
-    height: 4rem;
-    background-color: black;
-    border-radius: 0.2rem;
-    color: white;
-    margin: 1.13rem 0px 0px;
-    cursor: pointer;
-    border-radius: 10px;
-   /* display: inline-block;*/
-    transition: all 1s ease-in 700ms;
-}
-a{
-    text-decoration: none;
-    color: white;
-}
-.order:hover{
-    transform: scale(1.1);
-    color: black;
+.heading{
     background-color: var(--primary-color);
+    color: var(--secondary-color);
+    position: relative;
+    top: 85px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    width: 40%;
+    opacity: 0.8;
+    height: 8rem;
 }
+
+.heading h1 {
+    
+    font-size: 1.6rem;
+    line-height: 1.2;
+    font-family: var(--roboto);
+    /*text-align: center;
+    justify-content: center;*/
+    padding: 0.70rem;
+   
+}
+
+.heading p{
+    font-family: var(--roboto);
+    padding: 0.70rem;
+}
+
 
 /*OUR PURPOSE*/
 
@@ -300,27 +266,65 @@ a{
     text-align: center
 }
 
+/*our purpose ends*/
+
 .word-container{
     display: block;
-    padding-left: 2rem;
+    background: #dd2476;
+    background: var(--bg-gradient);
+    
+    /*padding-left: 2rem;
     padding-right: 2rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5rem;
+    margin-bottom: 5rem;*/
 }
 
 .first-row{
+    position: relative;
+    top: 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
+    
+    background-color: var(--primary-color);
+    width: 40%;
     
 }
 
+.third-row{
+    position: relative;
+    bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    background-color: var(--primary-color);
+    width: 40%;
+}
+
 .first-col{
-    width: 30%;
+    width: 100%;
     font-weight: bold;
     text-align: center;
     color: black;
+}
+
+h2.title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+h3.title{
+    font-weight: bold;
+}
+h4.subtitle{
+    text-align: center;
+}
+
+p.subtitle{
+    font-size: 1rem;
+    padding: 0.3rem 0 1rem 0;
 }
 
 .title{
@@ -330,22 +334,50 @@ a{
 }
 .subtitle{
     font-weight: 500;
+    font-family: var(--Lato);
 }
 
 .second-row{
-    display: flex;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 2rem 5rem;
+    margin-bottom: 3rem;
+    /*display: flex;
     margin-left: auto;
     margin-right: auto;
-    justify-content: space-around;
+    justify-content: space-around;*/
 }
 
 .second-col{
-    width: 27%;
-    padding-left: 15px;
+    width: 100%;
+    /*padding-left: 15px;
     padding-right: 15px;
     min-height: 1px;
-    position: relative;
+    position: relative;*/
 }
+.flora{
+   margin-bottom: 1rem;
+}
+
+.fourth-row{
+    padding: 2rem 5rem;
+    display: flex;
+    justify-content: center;
+}
+.fourth-col, .fifth-col, .sixth-col{
+    background: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+.col{
+    margin-right: 1.5rem;
+    width: 40%;
+}
+.font-logo{
+    margin-bottom: 2rem;
+}
+
 
 
 
